@@ -1,29 +1,78 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+  color: #111;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f5f5f5;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
+/* DARK MODE */
+body.dark {
+  background: #000;
+  color: #fff;
+}
+
+/* CLOCK BOX */
 .clock {
   text-align: center;
-  transition: 0.3s;
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.5s ease;
 }
 
+/* TIME TEXT */
 .clock h1 {
   font-size: 60px;
   color: green;
-}
-body.dark {
-  background: black;
-  color: white;
+  transition: all 0.5s ease;
 }
 
-.buttons button {
-  margin: 10px;
-  padding: 10px 15px;
+/* DATE */
+.clock p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* BUTTON CONTAINER */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* BUTTON STYLE */
+button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+button:hover {
+  transform: scale(1.05);
+  background: #2980b9;
+}
+
+/* OPTIONAL GLOW EFFECT */
+.clock.glow h1 {
+  text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
 }

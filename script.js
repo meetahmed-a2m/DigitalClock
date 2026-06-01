@@ -48,12 +48,14 @@ function toggleFormat() {
   is24 = !is24;
   updateClock();
 }
-
-// DARK MODE
 function toggleDark() {
-  dark = !dark;
   document.body.classList.toggle("dark");
 }
+// DARK MODE
+// function toggleDark() {
+//   dark = !dark;
+//   document.body.classList.toggle("dark");
+// }
 
 // START / STOP
 function toggleClock() {
