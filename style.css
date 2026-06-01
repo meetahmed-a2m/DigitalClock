@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.clock {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.clock h1 {
+  font-size: 60px;
+  color: green;
+}
+body.dark {
+  background: black;
+  color: white;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
